@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
@@ -29,33 +30,33 @@ public class Application extends Controller {
 	@Transactional
     public Result index() {
 		
-		Product terra = new Product("Terra Adubada", 30.00);
-		Product areia = new Product("Areia branca", 20.00);
-		
-		productDao.create(terra);
-		productDao.create(areia);
-
-		
+//		Product terra = new Product("Terra Adubada", 30.00);
+//		Product areia = new Product("Areia branca", 20.00);
+//		
+//		productDao.create(terra);
+//		productDao.create(areia);
+//
+//		
         Customer c = new Customer("Predio X");
         customerDao.create(c);    
         Customer c1 = new Customer("Predio 2");
         customerDao.create(c1);    
+//        
+//        Entry entrada = new Entry();
+//        entrada.addPaymentCustomer(c1, 500, new Date());
+//        entryDao.add(entrada);
+//
+//        
+//        Entry entrada1 = new Entry();
+//        entrada1.discountValue(c, terra, 1, new Date());
+//
+//        entryDao.add(entrada1);
+//        
+//        Entry entrada2 = new Entry(c1);
+//        entrada2.discountValue(c1, areia, 2.5, new Date());
+//        entryDao.add(entrada2);        
         
-        Entry entrada = new Entry();
-        entrada.addPaymentCustomer(c1, 500, new Date());
-        entryDao.add(entrada);
-
-        
-        Entry entrada1 = new Entry();
-        entrada1.discountValue(c, terra, 1, new Date());
-
-        entryDao.add(entrada1);
-        
-        Entry entrada2 = new Entry(c1);
-        entrada2.discountValue(c1, areia, 2.5, new Date());
-        entryDao.add(entrada2);        
-        
-    	return TODO;
+    	return ok(views.html.customer.index.render("Nature Jardim"));
     }
     
 	@Transactional
