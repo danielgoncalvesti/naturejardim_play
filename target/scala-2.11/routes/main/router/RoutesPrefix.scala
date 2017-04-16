@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/danielgoncalvesti/devel/naturejardim_playframework/conf/routes
-// @DATE:Wed Apr 12 20:50:26 BRT 2017
+// @DATE:Sat Apr 15 23:52:48 BRT 2017
 
 
 package router {

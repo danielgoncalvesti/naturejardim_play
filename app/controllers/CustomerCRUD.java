@@ -29,12 +29,25 @@ public class CustomerCRUD extends Controller{
     @BodyParser.Of(BodyParser.Json.class)
 	public Result addJson(){
 		JsonNode json = request().body().asJson();
-		String name = json.findPath("name").textValue();
-		Logger.info("name: "+ name);
-		
-		Customer customer = new Customer(name);
+	    Customer customer = Json.fromJson(json, Customer.class);
+
 		customerDao.create(customer);
 		
+		return ok();
+	}
+	
+	@Transactional
+    @BodyParser.Of(BodyParser.Json.class)	
+	public Result updateJson(){
+		JsonNode json = request().body().asJson();
+		Customer customer = Json.fromJson(json, Customer.class);
+		customerDao.update(customer);
+		return ok();
+	}
+	
+	@Transactional
+	public Result deleteJson(Long id){
+		customerDao.delete(id);
 		return ok();
 	}
 

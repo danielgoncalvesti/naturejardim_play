@@ -6,3 +6,11 @@ h2-browser
 h2-browser
 ~run
 h2-browser
+~run
+stage
+clean
+compile
+clean
+compile
+stage
+exit

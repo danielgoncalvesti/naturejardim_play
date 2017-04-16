@@ -4,7 +4,7 @@
 		module="play-hibernate_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170413005423"
+		publication="20170415235248"
 	>
 		<description>
 		play-hibernate
@@ -43,10 +43,11 @@
 		<dependency org="com.typesafe.play" name="play-netty-server_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jpa_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="4.3.10.Final" conf="compile->default(compile)"/>
-		<dependency org="mysql" name="mysql-connector-java" rev="5.1.36" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="org.assertj" name="assertj-core" rev="3.1.0" conf="test->default(compile)"/>
 		<dependency org="org.apache.commons" name="commons-lang3" rev="3.4" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="filters-helpers_2.11" rev="2.4.6" conf="compile->default(compile)"/>
+		<dependency org="org.postgresql" name="postgresql" rev="9.4-1201-jdbc41" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -16,12 +16,15 @@ libraryDependencies ++= Seq(
   // JPA dependencies to avoid conflicts.
   javaJpa,
   "org.hibernate" % "hibernate-entitymanager" % "4.3.10.Final",
-  "mysql" % "mysql-connector-java" % "5.1.36",
   cache,
   javaWs,
   "org.assertj" % "assertj-core" % "3.1.0" % "test",
-  "org.apache.commons" % "commons-lang3" % "3.4"
+  "org.apache.commons" % "commons-lang3" % "3.4",
+  filters, 
+  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 )
+
+libraryDependencies += filters
 EclipseKeys.preTasks := Seq(compile in Compile)
 EclipseKeys.projectFlavor := EclipseProjectFlavor.Java           
 EclipseKeys.createSrc := EclipseCreateSrc.ValueSet(EclipseCreateSrc.ManagedClasses, EclipseCreateSrc.ManagedResources) 

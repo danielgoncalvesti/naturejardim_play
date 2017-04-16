@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1dadf808[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2122d5c9[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -28,7 +28,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-lang3;3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mno default cache defined: set to /Users/danielgoncalvesti/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.4[0m
 [0m[[0mdebug[0m] [0m	found org.apache.commons#commons-lang3;3.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
@@ -1110,14 +1109,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving mysql#mysql-connector-java;5.1.36 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: mysql#mysql-connector-java;5.1.36 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: mysql#mysql-connector-java;5.1.36[0m
-[0m[[0mdebug[0m] [0m	found mysql#mysql-connector-java;5.1.36 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-cache_2.11;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.11;2.4.6 {compile=[default(compile)]}[0m
@@ -1309,6 +1300,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#filters-helpers_2.11;2.4.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67138ec3[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#filters-helpers_2.11;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#filters-helpers_2.11;2.4.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.postgresql#postgresql;9.4-1201-jdbc41 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.postgresql#postgresql;9.4-1201-jdbc41 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.postgresql#postgresql;9.4-1201-jdbc41[0m
+[0m[[0mdebug[0m] [0m	found org.postgresql#postgresql;9.4-1201-jdbc41 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [compile][0m
@@ -2050,10 +2068,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->compile][0m
@@ -2195,6 +2209,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [runtime][0m
@@ -2937,10 +2970,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->compile][0m
@@ -3082,6 +3111,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.6 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.4.6 {test=[default(compile)]}[0m
@@ -4302,10 +4350,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->compile][0m
@@ -4447,6 +4491,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -5191,10 +5254,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->compile][0m
@@ -5336,6 +5395,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -6080,10 +6158,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-entitymanager;4.3.10.Final->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;4.3.10.Final [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.36 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.6 [compile->compile][0m
@@ -6225,6 +6299,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.apache.commons#commons-lang3;3.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#filters-helpers_2.11;2.4.6->com.typesafe.play#play_2.11;2.4.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.11;2.4.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1201-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.6 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.6 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.6 [test->compile][0m
@@ -7137,10 +7230,11 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-netty-server_2.11;2.4.6!play-netty-server_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jpa_2.11;2.4.6!play-java-jpa_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-entitymanager;4.3.10.Final!hibernate-entitymanager.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.36!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.4.6!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.4.6!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#filters-helpers_2.11;2.4.6!filters-helpers_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.postgresql#postgresql;9.4-1201-jdbc41!postgresql.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.11;2.4.6!play_2.11.jar[0m
@@ -7272,7 +7366,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 650ms :: artifacts dl 23ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 697ms :: artifacts dl 24ms[0m
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT compile produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT runtime produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT test produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-test.xml[0m
@@ -7286,5 +7380,5 @@
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT docs produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT pom produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for play-hibernate#play-hibernate_2.11;1.0-SNAPSHOT scala-tool produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/target/resolution-cache/reports/play-hibernate-play-hibernate_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (650ms resolve - 23ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (697ms resolve - 24ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

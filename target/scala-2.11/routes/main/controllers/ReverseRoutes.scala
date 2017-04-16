@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/danielgoncalvesti/devel/naturejardim_playframework/conf/routes
-// @DATE:Wed Apr 12 20:50:26 BRT 2017
+// @DATE:Sat Apr 15 23:52:48 BRT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,12 +13,18 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:12
+  // @LINE:9
   class ReverseCustomerCRUD(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:10
+    def updateJson(): Call = {
+      import ReverseRouteContext.empty
+      Call("PUT", _prefix + { _defaultPrefix } + "customer/update")
+    }
   
     // @LINE:13
     def index(): Call = {
@@ -26,22 +32,28 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "customer/list")
     }
   
-    // @LINE:12
+    // @LINE:9
     def addJson(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "customer/add")
     }
   
+    // @LINE:11
+    def deleteJson(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "customer/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
   }
 
-  // @LINE:19
+  // @LINE:21
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:19
+    // @LINE:21
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -56,28 +68,34 @@ package controllers {
     }
 
   
-    // @LINE:16
-    def entriesByIdCustomer(customer:Long = 1): Call = {
+    // @LINE:14
+    def listProducts(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "entries" + queryString(List(if(customer == 1) None else Some(implicitly[QueryStringBindable[Long]].unbind("customer", customer)))))
+      Call("GET", _prefix + { _defaultPrefix } + "product/list")
     }
   
-    // @LINE:11
-    def customerById(id:Long = 1): Call = {
+    // @LINE:18
+    def popular(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "customer" + queryString(List(if(id == 1) None else Some(implicitly[QueryStringBindable[Long]].unbind("id", id)))))
+      Call("GET", _prefix + { _defaultPrefix } + "popular")
+    }
+  
+    // @LINE:16
+    def entriesByIdCustomer(customer:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "entries" + queryString(List(Some(implicitly[QueryStringBindable[Long]].unbind("customer", customer)))))
+    }
+  
+    // @LINE:8
+    def customerById(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "customer" + queryString(List(Some(implicitly[QueryStringBindable[Long]].unbind("id", id)))))
     }
   
     // @LINE:6
     def index(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix)
-    }
-  
-    // @LINE:14
-    def listProducts(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "product/list")
     }
   
   }
