@@ -80,7 +80,7 @@ public class Application extends Controller {
 
         Customer c2 = new Customer("Predio Asnolto", "rua ABC", 400.0);
         customerDao.create(c2); 
-        return TODO;
+        return ok();
         
 
 //
