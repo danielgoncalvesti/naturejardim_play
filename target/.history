@@ -14,3 +14,7 @@ clean
 compile
 stage
 exit
+~run
+h2-browser
+˜run
+~run

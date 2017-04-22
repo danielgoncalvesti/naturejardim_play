@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/danielgoncalvesti/devel/naturejardim_playframework/conf/routes
-// @DATE:Sat Apr 15 23:52:48 BRT 2017
+// @DATE:Sat Apr 22 14:18:55 BRT 2017
 
 package router
 
@@ -17,29 +17,33 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  Application_0: javax.inject.Provider[controllers.Application],
-  // @LINE:9
-  CustomerCRUD_1: javax.inject.Provider[controllers.CustomerCRUD],
-  // @LINE:21
-  Assets_2: javax.inject.Provider[controllers.Assets],
+  Application_1: javax.inject.Provider[controllers.Application],
+  // @LINE:8
+  CustomerCRUD_2: javax.inject.Provider[controllers.CustomerCRUD],
+  // @LINE:13
+  UserCRUD_0: javax.inject.Provider[controllers.UserCRUD],
+  // @LINE:23
+  Assets_3: javax.inject.Provider[controllers.Assets],
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    Application_0: javax.inject.Provider[controllers.Application],
-    // @LINE:9
-    CustomerCRUD_1: javax.inject.Provider[controllers.CustomerCRUD],
-    // @LINE:21
-    Assets_2: javax.inject.Provider[controllers.Assets]
-  ) = this(errorHandler, Application_0, CustomerCRUD_1, Assets_2, "/")
+    Application_1: javax.inject.Provider[controllers.Application],
+    // @LINE:8
+    CustomerCRUD_2: javax.inject.Provider[controllers.CustomerCRUD],
+    // @LINE:13
+    UserCRUD_0: javax.inject.Provider[controllers.UserCRUD],
+    // @LINE:23
+    Assets_3: javax.inject.Provider[controllers.Assets]
+  ) = this(errorHandler, Application_1, CustomerCRUD_2, UserCRUD_0, Assets_3, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Application_0, CustomerCRUD_1, Assets_2, prefix)
+    new Routes(errorHandler, Application_1, CustomerCRUD_2, UserCRUD_0, Assets_3, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -48,10 +52,11 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """@controllers.Application@.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer""", """@controllers.Application@.customerById(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer""", """@controllers.CustomerCRUD@.customerById(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer/add""", """@controllers.CustomerCRUD@.addJson()"""),
     ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer/update""", """@controllers.CustomerCRUD@.updateJson()"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer/$id<[^/]+>""", """@controllers.CustomerCRUD@.deleteJson(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """@controllers.UserCRUD@.doLogin(login:String, password:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customer/list""", """@controllers.CustomerCRUD@.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """product/list""", """@controllers.Application@.listProducts()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """entries""", """@controllers.Application@.entriesByIdCustomer(customer:Long)"""),
@@ -69,7 +74,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_0.get.index(),
+    Application_1.get.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -82,14 +87,14 @@ class Routes(
   )
 
   // @LINE:8
-  private[this] lazy val controllers_Application_customerById1_route = Route("GET",
+  private[this] lazy val controllers_CustomerCRUD_customerById1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customer")))
   )
-  private[this] lazy val controllers_Application_customerById1_invoker = createInvoker(
-    Application_0.get.customerById(fakeValue[Long]),
+  private[this] lazy val controllers_CustomerCRUD_customerById1_invoker = createInvoker(
+    CustomerCRUD_2.get.customerById(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Application",
+      "controllers.CustomerCRUD",
       "customerById",
       Seq(classOf[Long]),
       "GET",
@@ -103,7 +108,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customer/add")))
   )
   private[this] lazy val controllers_CustomerCRUD_addJson2_invoker = createInvoker(
-    CustomerCRUD_1.get.addJson(),
+    CustomerCRUD_2.get.addJson(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.CustomerCRUD",
@@ -120,7 +125,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customer/update")))
   )
   private[this] lazy val controllers_CustomerCRUD_updateJson3_invoker = createInvoker(
-    CustomerCRUD_1.get.updateJson(),
+    CustomerCRUD_2.get.updateJson(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.CustomerCRUD",
@@ -137,7 +142,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customer/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_CustomerCRUD_deleteJson4_invoker = createInvoker(
-    CustomerCRUD_1.get.deleteJson(fakeValue[Long]),
+    CustomerCRUD_2.get.deleteJson(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.CustomerCRUD",
@@ -150,11 +155,28 @@ class Routes(
   )
 
   // @LINE:13
-  private[this] lazy val controllers_CustomerCRUD_index5_route = Route("GET",
+  private[this] lazy val controllers_UserCRUD_doLogin5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  )
+  private[this] lazy val controllers_UserCRUD_doLogin5_invoker = createInvoker(
+    UserCRUD_0.get.doLogin(fakeValue[String], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserCRUD",
+      "doLogin",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """login"""
+    )
+  )
+
+  // @LINE:15
+  private[this] lazy val controllers_CustomerCRUD_index6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customer/list")))
   )
-  private[this] lazy val controllers_CustomerCRUD_index5_invoker = createInvoker(
-    CustomerCRUD_1.get.index(),
+  private[this] lazy val controllers_CustomerCRUD_index6_invoker = createInvoker(
+    CustomerCRUD_2.get.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.CustomerCRUD",
@@ -166,12 +188,12 @@ class Routes(
     )
   )
 
-  // @LINE:14
-  private[this] lazy val controllers_Application_listProducts6_route = Route("GET",
+  // @LINE:16
+  private[this] lazy val controllers_Application_listProducts7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("product/list")))
   )
-  private[this] lazy val controllers_Application_listProducts6_invoker = createInvoker(
-    Application_0.get.listProducts(),
+  private[this] lazy val controllers_Application_listProducts7_invoker = createInvoker(
+    Application_1.get.listProducts(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -183,12 +205,12 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_Application_entriesByIdCustomer7_route = Route("GET",
+  // @LINE:18
+  private[this] lazy val controllers_Application_entriesByIdCustomer8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("entries")))
   )
-  private[this] lazy val controllers_Application_entriesByIdCustomer7_invoker = createInvoker(
-    Application_0.get.entriesByIdCustomer(fakeValue[Long]),
+  private[this] lazy val controllers_Application_entriesByIdCustomer8_invoker = createInvoker(
+    Application_1.get.entriesByIdCustomer(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -200,12 +222,12 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_Application_popular8_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_Application_popular9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("popular")))
   )
-  private[this] lazy val controllers_Application_popular8_invoker = createInvoker(
-    Application_0.get.popular(),
+  private[this] lazy val controllers_Application_popular9_invoker = createInvoker(
+    Application_1.get.popular(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -217,12 +239,12 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
+  // @LINE:23
+  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
-    Assets_2.get.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
+    Assets_3.get.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -240,61 +262,67 @@ class Routes(
     // @LINE:6
     case controllers_Application_index0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_0.get.index())
+        controllers_Application_index0_invoker.call(Application_1.get.index())
       }
   
     // @LINE:8
-    case controllers_Application_customerById1_route(params) =>
+    case controllers_CustomerCRUD_customerById1_route(params) =>
       call(params.fromQuery[Long]("id", None)) { (id) =>
-        controllers_Application_customerById1_invoker.call(Application_0.get.customerById(id))
+        controllers_CustomerCRUD_customerById1_invoker.call(CustomerCRUD_2.get.customerById(id))
       }
   
     // @LINE:9
     case controllers_CustomerCRUD_addJson2_route(params) =>
       call { 
-        controllers_CustomerCRUD_addJson2_invoker.call(CustomerCRUD_1.get.addJson())
+        controllers_CustomerCRUD_addJson2_invoker.call(CustomerCRUD_2.get.addJson())
       }
   
     // @LINE:10
     case controllers_CustomerCRUD_updateJson3_route(params) =>
       call { 
-        controllers_CustomerCRUD_updateJson3_invoker.call(CustomerCRUD_1.get.updateJson())
+        controllers_CustomerCRUD_updateJson3_invoker.call(CustomerCRUD_2.get.updateJson())
       }
   
     // @LINE:11
     case controllers_CustomerCRUD_deleteJson4_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_CustomerCRUD_deleteJson4_invoker.call(CustomerCRUD_1.get.deleteJson(id))
+        controllers_CustomerCRUD_deleteJson4_invoker.call(CustomerCRUD_2.get.deleteJson(id))
       }
   
     // @LINE:13
-    case controllers_CustomerCRUD_index5_route(params) =>
-      call { 
-        controllers_CustomerCRUD_index5_invoker.call(CustomerCRUD_1.get.index())
+    case controllers_UserCRUD_doLogin5_route(params) =>
+      call(params.fromQuery[String]("login", None), params.fromQuery[String]("password", None)) { (login, password) =>
+        controllers_UserCRUD_doLogin5_invoker.call(UserCRUD_0.get.doLogin(login, password))
       }
   
-    // @LINE:14
-    case controllers_Application_listProducts6_route(params) =>
+    // @LINE:15
+    case controllers_CustomerCRUD_index6_route(params) =>
       call { 
-        controllers_Application_listProducts6_invoker.call(Application_0.get.listProducts())
+        controllers_CustomerCRUD_index6_invoker.call(CustomerCRUD_2.get.index())
       }
   
     // @LINE:16
-    case controllers_Application_entriesByIdCustomer7_route(params) =>
-      call(params.fromQuery[Long]("customer", None)) { (customer) =>
-        controllers_Application_entriesByIdCustomer7_invoker.call(Application_0.get.entriesByIdCustomer(customer))
+    case controllers_Application_listProducts7_route(params) =>
+      call { 
+        controllers_Application_listProducts7_invoker.call(Application_1.get.listProducts())
       }
   
     // @LINE:18
-    case controllers_Application_popular8_route(params) =>
-      call { 
-        controllers_Application_popular8_invoker.call(Application_0.get.popular())
+    case controllers_Application_entriesByIdCustomer8_route(params) =>
+      call(params.fromQuery[Long]("customer", None)) { (customer) =>
+        controllers_Application_entriesByIdCustomer8_invoker.call(Application_1.get.entriesByIdCustomer(customer))
       }
   
-    // @LINE:21
-    case controllers_Assets_versioned9_route(params) =>
+    // @LINE:20
+    case controllers_Application_popular9_route(params) =>
+      call { 
+        controllers_Application_popular9_invoker.call(Application_1.get.popular())
+      }
+  
+    // @LINE:23
+    case controllers_Assets_versioned10_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned9_invoker.call(Assets_2.get.versioned(path, file))
+        controllers_Assets_versioned10_invoker.call(Assets_3.get.versioned(path, file))
       }
   }
 }

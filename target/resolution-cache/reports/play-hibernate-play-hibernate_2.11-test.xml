@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170416001649"/>
+		date="20170422134632"/>
 	<dependencies>
 		<module organisation="org.assertj" name="assertj-core">
 			<revision name="3.1.0" status="release" pubdate="20150625043332" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="123">

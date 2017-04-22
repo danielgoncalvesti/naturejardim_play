@@ -5,10 +5,12 @@
 # Home page
 GET     /                           		@controllers.Application.index()
 
-GET 	/customer							@controllers.Application.customerById(id: Long)
+GET 	/customer							@controllers.CustomerCRUD.customerById(id: Long)
 POST	/customer/add						@controllers.CustomerCRUD.addJson()
 PUT		/customer/update					@controllers.CustomerCRUD.updateJson()
 DELETE  /customer/:id						@controllers.CustomerCRUD.deleteJson(id: Long)
+
+GET		/login								@controllers.UserCRUD.doLogin(login: String, password: String)
 
 GET		/customer/list						@controllers.CustomerCRUD.index()
 GET		/product/list						@controllers.Application.listProducts()

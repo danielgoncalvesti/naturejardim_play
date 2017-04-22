@@ -32,7 +32,6 @@ public class CustomerCRUD extends Controller{
 	    Customer customer = Json.fromJson(json, Customer.class);
 
 		customerDao.create(customer);
-		
 		return ok();
 	}
 	
@@ -50,5 +49,14 @@ public class CustomerCRUD extends Controller{
 		customerDao.delete(id);
 		return ok();
 	}
+	
+    @Transactional
+    public Result customerById(Long id){
+        Customer c = customerDao.find(id);
+        if (c == null){
+        	return badRequest(Json.toJson("Não existe"));
+        }
+        return ok(Json.toJson(c));
+    }
 
 }

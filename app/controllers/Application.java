@@ -1,8 +1,5 @@
 package controllers;
 
-import java.util.ArrayList;
-
-import java.util.Date;
 import java.util.List;
 
 import dao.CustomerJpaDaoImpl;
@@ -10,11 +7,12 @@ import dao.EntryJpaDaoImpl;
 import dao.ICustomerDAO;
 import dao.IEntryDAO;
 import dao.IProductDAO;
+import dao.IUserDAO;
 import dao.ProductJpaDaoImpl;
+import dao.UserJpaDaoImpl;
 import models.entities.Customer;
-import models.entities.Entry;
 import models.entities.Product;
-import play.db.jpa.JPA;
+import models.entities.User;
 import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -25,7 +23,7 @@ public class Application extends Controller {
 	static ICustomerDAO customerDao = new CustomerJpaDaoImpl();
 	static IEntryDAO entryDao = new EntryJpaDaoImpl();
 	static IProductDAO productDao = new ProductJpaDaoImpl();
-	
+	static IUserDAO userDao = new UserJpaDaoImpl();
 
 	@Transactional
     public Result index() {
@@ -42,15 +40,7 @@ public class Application extends Controller {
 		return ok(Json.toJson(entryDao.findByCustomer(id)));
 	}
 	
-    @Transactional
-    public Result customerById(Long id){
-        Customer c = customerDao.find(id);
-        if (c == null){
-        	return badRequest(Json.toJson("Não existe"));
-        }
-        return ok(Json.toJson(c));
-//        return TODO;
-    }
+
     
     @Transactional(readOnly=true)
     public Result listCustomers(){
@@ -80,7 +70,14 @@ public class Application extends Controller {
 
         Customer c2 = new Customer("Predio Asnolto", "rua ABC", 400.0);
         customerDao.create(c2); 
+        
+        
+        User u1 = new User("danielgoncalvesti@gmail.com", "daniel123");
+        userDao.create(u1);
         return ok();
+        
+        
+        
         
 
 //

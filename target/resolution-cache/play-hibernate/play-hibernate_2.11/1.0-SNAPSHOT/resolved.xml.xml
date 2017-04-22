@@ -4,7 +4,7 @@
 		module="play-hibernate_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170416001649"
+		publication="20170422134632"
 	>
 		<description>
 		play-hibernate

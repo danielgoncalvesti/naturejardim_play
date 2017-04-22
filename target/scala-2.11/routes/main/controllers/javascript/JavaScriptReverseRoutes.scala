@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/danielgoncalvesti/devel/naturejardim_playframework/conf/routes
-// @DATE:Sat Apr 15 23:52:48 BRT 2017
+// @DATE:Sat Apr 22 14:18:55 BRT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,27 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:9
+  // @LINE:13
+  class ReverseUserCRUD(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:13
+    def doLogin: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserCRUD.doLogin",
+      """
+        function(login,password) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("login", login), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:8
   class ReverseCustomerCRUD(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,32 +43,22 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
-    def updateJson: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CustomerCRUD.updateJson",
-      """
-        function() {
-          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "customer/update"})
-        }
-      """
-    )
-  
-    // @LINE:13
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CustomerCRUD.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customer/list"})
-        }
-      """
-    )
-  
     // @LINE:9
     def addJson: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CustomerCRUD.addJson",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "customer/add"})
+        }
+      """
+    )
+  
+    // @LINE:10
+    def updateJson: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.CustomerCRUD.updateJson",
+      """
+        function() {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "customer/update"})
         }
       """
     )
@@ -63,9 +73,29 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:8
+    def customerById: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.CustomerCRUD.customerById",
+      """
+        function(id) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customer" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("id", id)])})
+        }
+      """
+    )
+  
+    // @LINE:15
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.CustomerCRUD.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customer/list"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:21
+  // @LINE:23
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -73,7 +103,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:23
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -93,27 +123,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
-    def listProducts: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.listProducts",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product/list"})
-        }
-      """
-    )
-  
     // @LINE:18
-    def popular: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.popular",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "popular"})
-        }
-      """
-    )
-  
-    // @LINE:16
     def entriesByIdCustomer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.entriesByIdCustomer",
       """
@@ -123,12 +133,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
-    def customerById: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.customerById",
+    // @LINE:20
+    def popular: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.popular",
       """
-        function(id) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customer" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("id", id)])})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "popular"})
         }
       """
     )
@@ -139,6 +149,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def listProducts: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.listProducts",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product/list"})
         }
       """
     )
