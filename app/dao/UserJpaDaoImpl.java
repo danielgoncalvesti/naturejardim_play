@@ -1,6 +1,8 @@
 package dao;
 
 import javax.persistence.NoResultException;
+import javax.persistence.PersistenceException;
+
 import models.entities.Users;
 import play.Logger;
 import play.db.jpa.JPA;
@@ -10,7 +12,12 @@ public class UserJpaDaoImpl implements IUserDAO{
 
 	@Override
 	public void create(Users u) {
-		JPA.em().persist(u);		
+		try {
+			JPA.em().persist(u);
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		
 	}
 
 	@Override
@@ -20,8 +27,9 @@ public class UserJpaDaoImpl implements IUserDAO{
 			
 			if (u.getLogin().equals(login) && u.getPassword().equals(password)){
 				return u;
+			} else {
+				return null;
 			}
-			return null;
 		} catch(NoResultException nre){
 			Logger.info("Usuário e Senha incorretos! Usuário tentado:"+ login );
 			return null;
