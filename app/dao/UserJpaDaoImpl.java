@@ -23,7 +23,7 @@ public class UserJpaDaoImpl implements IUserDAO{
 			}
 			return null;
 		} catch(NoResultException nre){
-			Logger.error("Usuário e Senha incorretos! Usuário tentado:"+ login );
+			Logger.info("Usuário e Senha incorretos! Usuário tentado:"+ login );
 			return null;
 		}
 		
