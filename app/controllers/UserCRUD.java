@@ -15,7 +15,7 @@ public class UserCRUD extends Controller {
 	@Transactional
 	public Result doLogin(String login, String password){
 		
-		Users userLogin = userDao.login(login, password);
+		Users userLogin = userDao.login(login.toLowerCase(), password);
 	
     	if (userLogin != null){
     		return ok(Json.toJson(userLogin));	

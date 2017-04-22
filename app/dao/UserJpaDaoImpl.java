@@ -16,7 +16,6 @@ public class UserJpaDaoImpl implements IUserDAO{
 	@Override
 	public Users login(String login, String password) {
 		try {
-			login = login.toLowerCase();
 			Users u = (Users) JPA.em().createQuery("SELECT u FROM "+Users.TABLE+" u WHERE login=:login").setParameter("login", login).getSingleResult();
 			
 			if (u.getLogin().equals(login) && u.getPassword().equals(password)){
@@ -27,11 +26,7 @@ public class UserJpaDaoImpl implements IUserDAO{
 			Logger.info("Usuário e Senha incorretos! Usuário tentado:"+ login );
 			return null;
 		}
-		
-		
-		
 
-		
 	}
 
 }
