@@ -1,9 +1,6 @@
 package dao;
 
 import javax.persistence.NoResultException;
-
-import org.eclipse.jetty.util.log.Log;
-
 import models.entities.Users;
 import play.Logger;
 import play.db.jpa.JPA;
