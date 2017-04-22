@@ -1,7 +1,5 @@
 package dao;
 
-import com.sun.media.jfxmedia.logging.Logger;
-
 import models.entities.User;
 import play.db.jpa.JPA;
 
