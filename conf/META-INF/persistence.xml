@@ -11,6 +11,7 @@
         <class>models.entities.Customer</class>
         <class>models.entities.Entry</class>
         <class>models.entities.Product</class>
+        <class>models.entities.User</class>
         <properties>
             <!--Hibernate properties-->
             <property name="hibernate.show_sql" value="true"/>
