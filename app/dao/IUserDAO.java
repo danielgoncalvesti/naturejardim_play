@@ -1,10 +1,10 @@
 package dao;
 
-import models.entities.User;
+import models.entities.Users;
 
 public interface IUserDAO {
-	void create(User u);
-	User login(String name, String password);
+	void create(Users u);
+	Users login(String name, String password);
 	
 
 }

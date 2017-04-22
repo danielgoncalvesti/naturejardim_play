@@ -12,7 +12,7 @@ import dao.ProductJpaDaoImpl;
 import dao.UserJpaDaoImpl;
 import models.entities.Customer;
 import models.entities.Product;
-import models.entities.User;
+import models.entities.Users;
 import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -72,7 +72,7 @@ public class Application extends Controller {
         customerDao.create(c2); 
         
         
-        User u1 = new User("danielgoncalvesti@gmail.com", "daniel123");
+        Users u1 = new Users("danielgoncalvesti@gmail.com", "daniel123");
         userDao.create(u1);
         
         

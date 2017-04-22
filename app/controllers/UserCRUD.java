@@ -2,7 +2,7 @@ package controllers;
 
 import dao.IUserDAO;
 import dao.UserJpaDaoImpl;
-import models.entities.User;
+import models.entities.Users;
 import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -15,7 +15,7 @@ public class UserCRUD extends Controller {
 	@Transactional
 	public Result doLogin(String login, String password){
 		
-		User userLogin = userDao.login(login, password);
+		Users userLogin = userDao.login(login, password);
 	
     	if (userLogin != null){
     		return ok(Json.toJson(userLogin));	
