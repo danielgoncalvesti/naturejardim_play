@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/play-hibernate -Dplay.version=2.4.6 -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL}
+web: target/universal/stage/bin/play-hibernate -Dconfig.resource=production.conf -Dplay.version=2.4.6 -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL}

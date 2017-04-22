@@ -18,3 +18,16 @@ exit
 h2-browser
 ˜run
 ~run
+clean compile ~run
+clean compile 
+~run
+h2-browser
+~run
+h2-browser
+~run
+h2-browser
+~run
+h2-browser
+~run
+h2-browser
+~run

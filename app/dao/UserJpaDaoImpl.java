@@ -14,6 +14,7 @@ public class UserJpaDaoImpl implements IUserDAO{
 	public void create(Users u) {
 		try {
 			JPA.em().persist(u);
+			Logger.info("The user : "+ u.getLogin() + " was saved successfully!");
 		} catch(Exception e){
 			e.printStackTrace();
 		}
@@ -31,7 +32,7 @@ public class UserJpaDaoImpl implements IUserDAO{
 				return null;
 			}
 		} catch(NoResultException nre){
-			Logger.info("Usuário e Senha incorretos! Usuário tentado:"+ login );
+//			Logger.info("Usuário e Senha incorretos! Usuário tentado:"+ login + " senha: "+ password);
 			return null;
 		}
 

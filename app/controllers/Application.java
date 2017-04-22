@@ -12,7 +12,6 @@ import dao.ProductJpaDaoImpl;
 import dao.UserJpaDaoImpl;
 import models.entities.Customer;
 import models.entities.Product;
-import models.entities.Users;
 import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -69,14 +68,8 @@ public class Application extends Controller {
         customerDao.create(c1); 
 
         Customer c2 = new Customer("Predio Asnolto", "rua ABC", 400.0);
-        customerDao.create(c2); 
-        
-        
-        Users u1 = new Users("danielgoncalvesti@gmail.com", "daniel123");
-        userDao.create(u1);
-        
-        
-        
+        customerDao.create(c2);
+ 
         return ok();
 
 //
