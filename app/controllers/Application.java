@@ -74,11 +74,10 @@ public class Application extends Controller {
         
         User u1 = new User("danielgoncalvesti@gmail.com", "daniel123");
         userDao.create(u1);
+        
+        
+        
         return ok();
-        
-        
-        
-        
 
 //
 //		
