@@ -15,6 +15,7 @@ public class Product {
 	
 	@Id
 	@GeneratedValue
+	@Column(name = "ID_PROD")
 	private Long idProduct;
 	
 	@Column
@@ -23,8 +24,7 @@ public class Product {
 	@Column
 	private double productCost;
 	
-	public Product(){
-		
+	public Product(){	
 	}
 	
 	public Product(String name, double value){

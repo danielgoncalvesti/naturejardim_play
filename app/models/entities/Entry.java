@@ -2,6 +2,7 @@ package models.entities;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -13,6 +14,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 
 @Entity
@@ -24,17 +26,15 @@ public class Entry {
 	
 	@Id
 	@GeneratedValue
+	@Column(name="ID_ENTRY")
 	private Long id;
 	
 	@ManyToOne
 	@JoinColumn(name = "ID_CUSTOMER_FK", referencedColumnName = "ID_CUSTOMER" )
 	private Customer customer;
 	
-	@ManyToOne
-	private Product product;
-	
-	@Column
-	private double value;
+	@OneToMany(mappedBy="entry")
+	private Set<EntryItem> EntryItem;
 	
 	@Column
 	private String descriptionAdditional;
@@ -42,18 +42,12 @@ public class Entry {
 	@Column
 	private Date dateOfRegistry;
 	
-	@Column
-	private double quantity;
-	
 	public Entry(){
 	}
 	
-	public Entry(Customer c){
+	public Entry(Customer c, double value, Product product, double quantity){
 		this.customer = c;
-	}
-	
-	public Entry(Customer c, double value, boolean credit){
-		
+		this.descriptionAdditional=product.getName();
 	}
 	
 	public Long getId() {
@@ -62,10 +56,6 @@ public class Entry {
 
 	public Customer getCustomer() {
 		return customer;
-	}
-
-	public double getValue() {
-		return value;
 	}
 	
 	public String getDescription() {
@@ -84,42 +74,5 @@ public class Entry {
 		this.dateOfRegistry = dateOfRegistry;
 	}
 
-	public double getQuantity() {
-		return quantity;
-	}
 
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
-	}
-
-	public Product getProduct() {
-		return product;
-	}
-
-	public void setProduct(Product product) {
-		this.product = product;
-	}
-
-	public void discountValue(Customer c, Product p, double quantity, Date date){
-		 this.customer = c;
-		 this.product = p;
-		 this.value = (quantity * p.getProductCost()) *-1;
-		 this.quantity = quantity;		
-		 this.dateOfRegistry = date;
-		
-	}
-	
-	public void addPaymentCustomer(Customer c, double payment, Date date){
-		this.customer = c;
-		this.value = payment;
-		this.dateOfRegistry = date;
-	}
-	
-	
-	
-
-
-	
-
-	
 }
