@@ -78,10 +78,4 @@ public class Customer {
 		this.contractPrice = contractPrice;
 	}
 
-	  
-
-	  
-	  
-
-
 }

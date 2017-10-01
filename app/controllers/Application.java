@@ -1,7 +1,8 @@
 package controllers;
 
-import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import dao.CustomerJpaDaoImpl;
 import dao.EntryJpaDaoImpl;
@@ -12,12 +13,14 @@ import dao.IUserDAO;
 import dao.ProductJpaDaoImpl;
 import dao.UserJpaDaoImpl;
 import models.entities.Customer;
-import models.entities.Product;
 import models.entities.Entry;
+import models.entities.Item;
+import models.entities.Product;
 import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+
 
 public class Application extends Controller {
 	
@@ -51,6 +54,8 @@ public class Application extends Controller {
     
     @Transactional
     public Result popular(){
+    	
+    	
 		Product terra = new Product("Terra Adubada", 30.00);
 		Product areia = new Product("Areia branca", 20.00);
 		
@@ -66,16 +71,15 @@ public class Application extends Controller {
         Customer c2 = new Customer("Predio Asnolto", "rua ABC", 400.0);
         customerDao.create(c2);
         
-        Entry entrada = new Entry(c, 50, terra, 2);
-        entryDao.add(entrada);
+        Set<Item> items = new HashSet<Item>();
+        items.add(new Item(areia, 10.50));
+        items.add(new Item(terra, 22.50));
+        
+        Entry entry = new Entry(c, items);
 
-        
-        Entry entrada1 = new Entry(c1, 20.0, areia, 2);
-        entryDao.add(entrada1);
-        
-        Entry entrada2 = new Entry(c2, 21.5, areia, 1);
-        entryDao.add(entrada2); 
-        return ok();
+        entryDao.add(entry);
+
+        return ok(Json.toJson(entry));
     }
 
 }

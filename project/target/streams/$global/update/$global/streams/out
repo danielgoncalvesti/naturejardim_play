@@ -8,20 +8,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#naturejardim_playframework-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.4.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.4.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-plugin;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.play#sbt-plugin;2.4.6[0m
-[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml (2.4.6)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.4.6!ivy.xml(ivy.original) (3113ms)[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-plugin;2.4.6 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-plugin;2.4.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.4.6->com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 [compile->default(compile)][0m
@@ -31,37 +19,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom (2.4.6)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-routes-compiler_2.10;2.4.6!sbt-routes-compiler_2.10.pom(pom.original) (594ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-routes-compiler_2.10/2.4.6/jars/sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-routes-compiler_2.10;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.4.6->com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.4.6->com.typesafe.play#sbt-routes-compiler_2.10;2.4.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -155,37 +114,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.4.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.4.6 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-run-support_2.10/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom (2.4.6)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.4.6!sbt-run-support_2.10.pom(pom.original) (541ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/sbt-run-support_2.10/2.4.6/jars/sbt-run-support_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-run-support_2.10;2.4.6 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-run-support_2.10;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-run-support_2.10;2.4.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.4.6->com.typesafe.play#sbt-run-support_2.10;2.4.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.4.6->com.typesafe.play#sbt-run-support_2.10;2.4.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -208,37 +138,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.4.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.4.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#build-link;2.4.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/build-link/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#build-link;2.4.6[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom (2.4.6)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#build-link;2.4.6!build-link.pom(pom.original) (704ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/build-link/2.4.6/jars/build-link.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.4.6 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#build-link;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.4.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.6->com.typesafe.play#build-link;2.4.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.4.6->com.typesafe.play#play-exceptions;2.4.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -252,37 +153,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.4.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.4.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.4.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/play-exceptions/2.4.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#play-exceptions;2.4.6[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom (2.4.6)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.4.6!play-exceptions.pom(pom.original) (540ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/.ivy2/local/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/danielgoncalvesti/activator-dist-1.3.12/repository/com.typesafe.play/play-exceptions/2.4.6/jars/play-exceptions.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.4.6 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.4.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.4.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.4.6->com.typesafe.play#play-exceptions;2.4.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.4.6->org.javassist#javassist;3.19.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -13643,12 +13515,7 @@
 [0m[[0mdebug[0m] [0mall callers are evicted for org.tukaani#xz;1.4: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/jars/sbt-plugin.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/jars/sbt-plugin.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/jars/sbt-plugin.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/jars/sbt-plugin.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.6/jars/sbt-plugin.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.4.6!sbt-plugin.jar (8054ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.4.6!sbt-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-coffeescript;1.0.0!sbt-coffeescript.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-less;1.0.6!sbt-less.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-jshint;1.0.3!sbt-jshint.jar[0m
@@ -13657,18 +13524,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-mocha;1.1.0!sbt-mocha.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.4.6/sbt-routes-compiler_2.10-2.4.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-routes-compiler_2.10;2.4.6!sbt-routes-compiler_2.10.jar (1698ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.6/sbt-run-support_2.10-2.4.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.4.6!sbt-run-support_2.10.jar (674ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-routes-compiler_2.10;2.4.6!sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-run-support_2.10;2.4.6!sbt-run-support_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;18.0!guava.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.h2database#h2;1.4.187!h2.jar[0m
@@ -13682,18 +13539,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-api_2.10;1.1.1!twirl-api_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#build-link;2.4.6!build-link.jar (568ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.4.6!play-exceptions.jar (576ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.4.6!build-link.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.4.6!play-exceptions.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.10;1.1.1!twirl-compiler_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-parser_2.10;1.1.1!twirl-parser_2.10.jar[0m
@@ -13832,7 +13679,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.9!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 22288ms :: artifacts dl 11604ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1358ms :: artifacts dl 28ms[0m
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT compile produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT runtime produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT test produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-test.xml[0m
@@ -13846,5 +13693,5 @@
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT docs produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT pom produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#naturejardim_playframework-build;0.1-SNAPSHOT scala-tool produced in /Users/danielgoncalvesti/devel/naturejardim_playframework/project/target/resolution-cache/reports/default-naturejardim_playframework-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (22288ms resolve - 11604ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1358ms resolve - 28ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
