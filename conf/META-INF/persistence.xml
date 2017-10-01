@@ -9,7 +9,7 @@
 
         <class>models.entities.Customer</class>
         <class>models.entities.Entry</class>
-        <class>models.entities.EntryItem</class>
+        <class>models.entities.Item</class>
         <class>models.entities.Product</class>
         <class>models.entities.Users</class>
 
