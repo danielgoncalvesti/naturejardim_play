@@ -18,7 +18,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
- 	    <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>   
+	    <!--  <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>   -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.connection.CharSet" value="utf8"/>
             <property name="hibernate.connection.characterEncoding" value="utf8"/>
