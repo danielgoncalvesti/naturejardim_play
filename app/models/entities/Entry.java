@@ -70,11 +70,11 @@ public class Entry {
 	
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "ENTRY_ITEM", joinColumns = { @JoinColumn(name = "ENTRY_ID") }, inverseJoinColumns = { @JoinColumn(name = "ITEM_ID" )})
-	public Set<Item> getitems() {
+	public Set<Item> getItems() {
 		return items;
 	}
 
-	public void setitems(Set<Item> items) {
+	public void setItems(Set<Item> items) {
 		this.items = items;
 	}
 	
